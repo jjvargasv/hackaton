@@ -9,9 +9,11 @@ function validarCadena(cadena) {
         for (let i = 0; i < cadena.length; i++) {
             if (cadena[i] >= 'A' && cadena[i] <= 'Z') {
                 letrasMayusculas = true;
-            } else if (cadena[i] >= 'a' && cadena[i] <= 'z') {
+            }
+            if (cadena[i] >= 'a' && cadena[i] <= 'z') {
                 letrasMinusculas = true;
-            } else if (cadena[i] >= '0' && cadena[i] <= '9') {
+            }
+             if (cadena[i] >= '0' && cadena[i] <= '9') {
                 numeros = true;
             }
         }
@@ -19,7 +21,13 @@ function validarCadena(cadena) {
         if (letrasMayusculas && letrasMinusculas && numeros) {
             return true;
         }
+        else {
+                    return false;
+        }
     }
+    else {
+            return false;
+        }
 }
 
-console.log(validarCadena("Hola"));
+console.log(validarCadena("Hola como estas 19"));

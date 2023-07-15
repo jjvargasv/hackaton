@@ -1,6 +1,6 @@
 /* Escribe una función que reciba un array de números ordenados de forma ascendente y devuelva el o los números faltantes en la secuencia. */
 
-function encontrarNumerosFal(array) {
+function encontrNumerFal(array) {
     const numerosFaltantes = [];
      for (let i = 0; i < array.length - 1; i++) {
       const diferencia = array[i + 1] - array[i];
@@ -13,6 +13,6 @@ function encontrarNumerosFal(array) {
      return numerosFaltantes;
   }
  
-  const numeros = [1, 2, 4, 6, 8,10];
-  const faltantes = encontrarNumerosFal(numeros);
+
+  const faltantes = encontrNumerFal([1, 2, 4, 6, 7,8,10]);
   console.log(faltantes);
